@@ -1,28 +1,3 @@
 {
-  "placeholderImages": [
-    {
-      "id": "profilePicture",
-      "description": "A portrait of a person.",
-      "imageUrl": "https://images.unsplash.com/photo-1613566028327-4a32e02f6ab1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxwb3J0cmFpdCUyMHBlcnNvbnxlbnwwfHx8fDE3Njg3NjQ2MTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "portrait person"
-    },
-    {
-      "id": "project1",
-      "description": "Abstract code lines on a screen.",
-      "imageUrl": "https://images.unsplash.com/photo-1760548425298-22aa4b60fc16?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjb2RlJTIwYWJzdHJhY3R8ZW58MHx8fHwxNzY4NjU0ODMyfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "code abstract"
-    },
-    {
-      "id": "project2",
-      "description": "A modern online store interface.",
-      "imageUrl": "https://images.unsplash.com/photo-1742837581522-111d23b69a04?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxlY29tbWVyY2UlMjB3ZWJzaXRlfGVufDB8fHx8MTc2ODY5MTkzNXww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "ecommerce website"
-    },
-    {
-      "id": "project3",
-      "description": "A clean and simple blog layout.",
-      "imageUrl": "https://images.unsplash.com/photo-1735399976112-17508533c97a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxibG9nJTIwaW50ZXJmYWNlfGVufDB8fHx8MTc2ODc2NjkxN3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "blog interface"
-    }
-  ]
+  "placeholderImages": []
 }
