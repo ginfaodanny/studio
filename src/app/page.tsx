@@ -43,13 +43,13 @@ const contactLinks = [
     icon: <FileDown size={16} />,
     label: 'Télécharger le CV (PDF)',
     value: 'Version imprimable',
-    href: './CV_Georges_GinFao_Daniel.pdf',
+    href: '/CV_Georges_GinFao_Daniel.pdf',
   },
 ];
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen w-full items-center justify-center bg-background p-3">
+    <main className="flex min-h-screen w-full items-center justify-center bg-background p-3 sm:p-4">
       <div className="w-full max-w-sm rounded-2xl bg-card shadow-2xl shadow-primary/10">
         <header className="rounded-t-2xl bg-primary p-4 text-primary-foreground sm:p-5">
           <h1 className="text-xl font-extrabold tracking-tight sm:text-2xl">
@@ -73,21 +73,18 @@ export default function Home() {
               <a
                 key={link.href}
                 href={link.href}
-                target={link.href.startsWith('http') || link.href.startsWith('./') ? '_blank' : undefined}
+                target={link.href.startsWith('http') || link.href.startsWith('/') ? '_blank' : undefined}
                 rel={link.href.startsWith('http') ? 'noopener noreferrer' : undefined}
-                className="group flex items-center justify-between rounded-lg border bg-accent/50 p-2.5 transition-all hover:-translate-y-0.5 hover:border-primary/40 hover:bg-accent hover:shadow-md"
+                className="group flex items-center justify-between rounded-lg border bg-primary/10 p-2.5 transition-all hover:-translate-y-0.5 hover:border-primary/40 hover:bg-primary/20 hover:shadow-md"
               >
-                <div className="flex min-w-0 items-center gap-2.5">
-                  <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-md bg-primary/10 text-primary">
+                <div className="flex min-w-0 items-center gap-3">
+                  <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-md bg-primary/20 text-primary">
                     {link.icon}
                   </div>
                   <div className="flex min-w-0 flex-col">
                     <strong className="truncate text-sm font-semibold text-foreground">
                       {link.label}
                     </strong>
-                    <span className="truncate text-xs text-muted-foreground">
-                      {link.value}
-                    </span>
                   </div>
                 </div>
                 <ChevronRight className="h-5 w-5 shrink-0 text-muted-foreground/60 transition-transform group-hover:translate-x-0.5 group-hover:text-muted-foreground" />
