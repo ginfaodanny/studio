@@ -49,9 +49,9 @@ const contactLinks = [
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen w-full items-center justify-center p-4 sm:p-6">
-      <div className="w-full max-w-lg">
-        <header className="rounded-t-xl bg-primary p-6 text-primary-foreground shadow-2xl shadow-primary/20">
+    <main className="flex min-h-screen w-full items-center justify-center p-4">
+      <div className="w-full max-w-md rounded-2xl bg-card shadow-2xl shadow-primary/10">
+        <header className="rounded-t-2xl bg-primary p-6 text-primary-foreground">
           <h1 className="text-2xl font-extrabold tracking-tight sm:text-3xl">
             Georges Gin-Fao Daniel
           </h1>
@@ -62,9 +62,9 @@ export default function Home() {
 
         <section
           aria-label="Coordonnées"
-          className="rounded-b-xl border-x border-b bg-card p-4 text-card-foreground shadow-lg sm:p-6"
+          className="p-4 sm:p-6"
         >
-          <h2 className="mb-4 px-2 text-xs font-bold uppercase tracking-wider text-muted-foreground">
+          <h2 className="px-2 pb-4 text-xs font-bold uppercase tracking-wider text-muted-foreground">
             Coordonnées professionnelles
           </h2>
 
@@ -75,17 +75,17 @@ export default function Home() {
                 href={link.href}
                 target={link.href.startsWith('http') || link.href.startsWith('./') ? '_blank' : undefined}
                 rel={link.href.startsWith('http') ? 'noopener noreferrer' : undefined}
-                className="group flex items-center justify-between rounded-lg border bg-transparent p-4 transition-all hover:-translate-y-0.5 hover:border-primary/40 hover:bg-accent hover:shadow-md"
+                className="group flex items-center justify-between rounded-xl border bg-transparent p-3 transition-all hover:-translate-y-0.5 hover:border-primary/40 hover:bg-accent hover:shadow-md sm:p-4"
               >
-                <div className="flex min-w-0 items-center gap-4">
-                  <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-md bg-primary/10 text-primary">
+                <div className="flex min-w-0 items-center gap-3 sm:gap-4">
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary sm:h-11 sm:w-11">
                     {link.icon}
                   </div>
                   <div className="flex min-w-0 flex-col">
-                    <strong className="truncate text-sm font-semibold text-foreground sm:text-base">
+                    <strong className="truncate text-sm font-semibold text-foreground">
                       {link.label}
                     </strong>
-                    <span className="truncate text-xs text-muted-foreground sm:text-sm">
+                    <span className="truncate text-xs text-muted-foreground">
                       {link.value}
                     </span>
                   </div>
@@ -95,7 +95,7 @@ export default function Home() {
             ))}
           </div>
 
-          <footer className="mt-5 text-center">
+          <footer className="mt-6 pt-2 text-center">
              <div className="inline-block rounded-full border bg-secondary/70 px-3 py-1 text-xs text-muted-foreground">Dernière mise à jour : 2026</div>
           </footer>
         </section>
