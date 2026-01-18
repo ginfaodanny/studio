@@ -1,3 +1,74 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 216 50% 97%; /* Lighter blue-gray for background */
+    --foreground: 222 47% 11%; /* Dark blue for text */
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    --primary: 215 50% 32%; /* #1F3A5F */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 216 50% 92%;
+    --secondary-foreground: 222 47% 11%;
+
+    --muted: 216 30% 90%;
+    --muted-foreground: 215 28% 47%;
+
+    --accent: 216 50% 95%;
+    --accent-foreground: 222 47% 11%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 215 30% 88%;
+    --input: 215 30% 88%;
+    --ring: 215 50% 32%;
+
+    --radius: 1rem;
+  }
+
+  .dark {
+    /* A nice dark theme based on the blue */
+    --background: 220 25% 10%;
+    --foreground: 210 40% 98%;
+    --card: 220 25% 15%;
+    --card-foreground: 210 40% 98%;
+    --popover: 220 25% 10%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 217 91% 60%;
+    --primary-foreground: 222 47% 11%;
+    --secondary: 217 33% 20%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217 33% 20%;
+    --muted-foreground: 215 20% 65%;
+    --accent: 217 33% 20%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217 33% 25%;
+    --input: 217 33% 25%;
+    --ring: 216 91% 55%;
+    --radius: 1rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply text-foreground;
+    background:
+        radial-gradient(1200px 400px at 10% 0%, hsla(var(--primary), 0.1), transparent 60%),
+        radial-gradient(900px 350px at 90% 0%, hsla(var(--primary), 0.08), transparent 55%),
+        hsl(var(--background));
+  }
+}

@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Georges Gin-Fao Daniel — Contacts</title>
+  <meta name="description" content="Coordonnées professionnelles — Georges Gin-Fao Daniel" />
+  <meta name="theme-color" content="#1F3A5F" />
+  <style>
+    :root{
+      --primary:#1F3A5F;
+      --primary-2:#243A5E;
+      --bg:#E6EEF6;
+      --text:#1d2430;
+      --muted:#5b6678;
+      --card:#ffffff;
+      --shadow: 0 12px 30px rgba(16, 24, 40, .12);
+      --radius:16px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(1200px 400px at 10% 0%, rgba(31,58,95,.25), transparent 60%),
+        radial-gradient(900px 350px at 90% 0%, rgba(31,58,95,.18), transparent 55%),
+        var(--bg);
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:24px;
+    }
+    .wrap{
+      width:min(520px, 100%);
+    }
+    .top{
+      background: linear-gradient(135deg, var(--primary), var(--primary-2));
+      color:#fff;
+      border-radius: 22px;
+      padding:22px 20px;
+      box-shadow: var(--shadow);
+    }
+    .name{
+      font-size: 26px;
+      line-height:1.1;
+      margin:0 0 6px 0;
+      font-weight: 800;
+      letter-spacing:.2px;
+    }
+    .role{
+      margin:0;
+      font-size: 14px;
+      opacity:.92;
+      font-weight: 500;
+    }
+    .card{
+      margin-top:14px;
+      background: var(--card);
+      border-radius: 22px;
+      padding:18px;
+      box-shadow: var(--shadow);
+    }
+    .section-title{
+      margin:0 0 10px 0;
+      font-weight: 800;
+      color: var(--primary);
+      letter-spacing:.3px;
+      text-transform: uppercase;
+      font-size: 12px;
+    }
+    .btns{
+      display:grid;
+      gap:10px;
+    }
+    a.btn{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+      padding:14px 14px;
+      border-radius: var(--radius);
+      text-decoration:none;
+      border:1px solid rgba(31,58,95,.15);
+      color:var(--text);
+      background: #fff;
+      transition: transform .08s ease, border-color .12s ease, box-shadow .12s ease;
+    }
+    a.btn:hover{
+      transform: translateY(-1px);
+      border-color: rgba(31,58,95,.35);
+      box-shadow: 0 10px 20px rgba(31,58,95,.10);
+    }
+    .left{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      min-width:0;
+    }
+    .icon{
+      width:38px;height:38px;
+      border-radius: 12px;
+      display:grid;
+      place-items:center;
+      background: rgba(31,58,95,.10);
+      color: var(--primary);
+      font-size:18px;
+      flex:0 0 auto;
+    }
+    .label{
+      display:flex;
+      flex-direction:column;
+      min-width:0;
+    }
+    .label strong{
+      font-size:14px;
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
+    }
+    .label span{
+      font-size:12px;
+      color:var(--muted);
+      margin-top:2px;
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
+    }
+    .arrow{
+      color: rgba(31,58,95,.65);
+      font-weight:800;
+      flex:0 0 auto;
+    }
+    .foot{
+      margin-top:12px;
+      text-align:center;
+      color:var(--muted);
+      font-size:12px;
+    }
+    .pill{
+      display:inline-block;
+      padding:6px 10px;
+      border-radius:999px;
+      background: rgba(31,58,95,.08);
+      border:1px solid rgba(31,58,95,.12);
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header class="top">
+      <h1 class="name">Georges Gin-Fao Daniel</h1>
+      <p class="role">Technicien Informatique – Support & Réseaux</p>
+    </header>
+
+    <section class="card" aria-label="Coordonnées">
+      <h2 class="section-title">Coordonnées professionnelles</h2>
+
+      <div class="btns">
+        <!-- Appel -->
+        <a class="btn" href="tel:+50941704583">
+          <div class="left">
+            <div class="icon">📞</div>
+            <div class="label">
+              <strong>Natcom</strong>
+              <span>+509 4170-4583</span>
+            </div>
+          </div>
+          <div class="arrow">›</div>
+        </a>
+
+        <!-- Appel 2 (optionnel) -->
+        <a class="btn" href="tel:+50944539500">
+          <div class="left">
+            <div class="icon">☎️</div>
+            <div class="label">
+              <strong>Digicel</strong>
+              <span>+509 4453-9500</span>
+            </div>
+          </div>
+          <div class="arrow">›</div>
+        </a>
+
+        <!-- WhatsApp -->
+        <a class="btn" href="https://wa.me/50933377934" target="_blank" rel="noopener">
+          <div class="left">
+            <div class="icon">💬</div>
+            <div class="label">
+              <strong>WhatsApp</strong>
+              <span>+509 3337-7934</span>
+            </div>
+          </div>
+          <div class="arrow">›</div>
+        </a>
+
+        <!-- Email -->
+        <a class="btn" href="mailto:gincoder-ms@outlook.fr">
+          <div class="left">
+            <div class="icon">✉️</div>
+            <div class="label">
+              <strong>Envoyer un email</strong>
+              <span>gincoder-ms@outlook.fr</span>
+            </div>
+          </div>
+          <div class="arrow">›</div>
+        </a>
+
+        <!-- Localisation -->
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Marchand-Dessalines%2C%20Rue%20Dupuy%2C%20Haiti" target="_blank" rel="noopener">
+          <div class="left">
+            <div class="icon">📍</div>
+            <div class="label">
+              <strong>Localisation</strong>
+              <span>Marchand-Dessalines, Rue Dupuy</span>
+            </div>
+          </div>
+          <div class="arrow">›</div>
+        </a>
+
+        <!-- CV PDF (optionnel) : mets ton PDF dans le repo et renomme-le "CV_Georges_GinFao_Daniel.pdf" -->
+        <a class="btn" href="./CV_Georges_GinFao_Daniel.pdf" target="_blank" rel="noopener">
+          <div class="left">
+            <div class="icon">📄</div>
+            <div class="label">
+              <strong>Télécharger le CV (PDF)</strong>
+              <span>Version imprimable</span>
+            </div>
+          </div>
+          <div class="arrow">›</div>
+        </a>
+      </div>
+
+      <div class="foot">
+        <span class="pill">Dernière mise à jour : 2026</span>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
