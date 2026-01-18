@@ -50,7 +50,7 @@ const contactLinks = [
 export default function Home() {
   return (
     <main className="flex min-h-screen w-full items-center justify-center p-4 sm:p-6">
-      <div className="w-full max-w-md">
+      <div className="w-full max-w-lg">
         <header className="rounded-t-xl bg-primary p-6 text-primary-foreground shadow-2xl shadow-primary/20">
           <h1 className="text-2xl font-extrabold tracking-tight sm:text-3xl">
             Georges Gin-Fao Daniel
@@ -62,7 +62,7 @@ export default function Home() {
 
         <section
           aria-label="Coordonnées"
-          className="rounded-b-xl border-x border-b bg-card p-4 text-card-foreground shadow-lg"
+          className="rounded-b-xl border-x border-b bg-card p-4 text-card-foreground shadow-lg sm:p-6"
         >
           <h2 className="mb-4 px-2 text-xs font-bold uppercase tracking-wider text-muted-foreground">
             Coordonnées professionnelles
@@ -82,10 +82,10 @@ export default function Home() {
                     {link.icon}
                   </div>
                   <div className="flex min-w-0 flex-col">
-                    <strong className="truncate font-semibold text-foreground">
+                    <strong className="truncate text-sm font-semibold text-foreground sm:text-base">
                       {link.label}
                     </strong>
-                    <span className="truncate text-sm text-muted-foreground">
+                    <span className="truncate text-xs text-muted-foreground sm:text-sm">
                       {link.value}
                     </span>
                   </div>
